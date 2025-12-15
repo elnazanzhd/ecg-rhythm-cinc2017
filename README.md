@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/24175410/README.md)
+
 # ECG Rhythm Classification on PhysioNet/CinC 2017 (Single-Lead)
 
 <p align="center">
@@ -31,6 +31,8 @@ A **single-lead ECG** captures the electrical potential difference from one view
 The PhysioNet/Computing in Cardiology Challenge 2017 focuses on classifying **short single-lead ECG recordings** (roughly tens of seconds) into **N / A / O / ~**.
 
 This repo assumes you have already downloaded and extracted the official training data and have the `REFERENCE.csv` label file.
+
+make sure to adjust the path and directories used in the notebook before running.
 
 link to dataset:https://physionet.org/content/challenge-2017/1.0.0/training/#files-panel
 
@@ -90,7 +92,7 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 
-
+```
 ## Limitations
 
 - **“Other” is a heterogeneous label.** The `O` class is a catch-all for multiple non-AF, non-normal rhythms. This creates intrinsic label ambiguity and makes the class harder to learn and interpret (higher overlap with both `N` and `A`).
